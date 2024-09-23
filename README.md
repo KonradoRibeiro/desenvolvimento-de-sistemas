@@ -1,12 +1,3 @@
-# desenvolvimento-de-sistemas
-Tarefa em Grupo
-TG1: Contexto e diagrama de Caso de uso
-TG2: Especificação de caso de uso
-• Encontrar e definir os Casos de uso do sistema.
-• Elaborar o Diagrama de caso de uso (TG1).
-• Elaborar a Especificação do caso de uso principal (TG2).
-• Disponibilizar (Wiki do GitHub)
-
 Contexto para o Diagrama de Uso de um sistema de e-commerce
 Atores:
 -Cliente: O cliente representa o usuário comum do sistema, aquele que faz compras e interage com o carrinho de compras.
