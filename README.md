@@ -57,3 +57,27 @@ O sistema deve oferecer diferentes métodos de pagamento, conforme política da 
 O processo de checkout deve ser concluído em menos de 5 segundos, excluindo o tempo de processamento do pagamento.
 O sistema deve ser capaz de lidar com múltiplas transações simultâneas, garantindo segurança e confiabilidade nos dados financeiros.
 O sistema deve criptografar as informações de pagamento do cliente, garantindo a segurança dos dados pessoais e bancários.
+
+@startuml
+left to right direction
+
+actor Cliente
+actor Administrador
+
+rectangle {
+  Cliente -- (BuscarProdutos)
+  Cliente -- (AdicionarAoCarrinho)
+  Cliente -- (VisualizarHistórico)
+  (BuscarProdutos)  -- (FazerCheckout)
+  (AdicionarAoCarrinho) -- (FazerCheckout)
+  (VisualizarHistórico) -- (FazerCheckout)
+  (FazerCheckout) -- (SistemaDePagamento) 
+}
+
+rectangle {
+  Administrador -- (AdicionarProduto)
+  Administrador -- (RemoverProduto)
+  Administrador -- (GerenciarPedidos)
+  (RemoverProduto) -- (GerenciarPedidos)
+}
+@enduml
